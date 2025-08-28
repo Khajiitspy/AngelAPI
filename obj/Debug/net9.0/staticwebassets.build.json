@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "QgTNDkJqd8n/7bbT0vqRb6qhrdGGAqmepzuOz0nMtg0=",
+  "Source": "AngelAPI",
+  "BasePath": "_content/AngelAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
