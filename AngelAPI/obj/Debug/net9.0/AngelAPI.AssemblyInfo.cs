@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AngelAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b125ad622328a1fca82c74a816b3abc8c199324b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15ab4da0c578135aa68d7d37335621a8a32d3fd3")]
 [assembly: System.Reflection.AssemblyProductAttribute("AngelAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AngelAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

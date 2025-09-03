@@ -21,17 +21,39 @@ public class CategoriesController(ICategoriesService categoriesService) : Contro
     //[Authorize(Roles = Roles.Admin)]
     public async Task<IActionResult> Create([FromForm] CategoryCreateModel model)
     {
+        var existingCategory = await categoriesService.GetBySlugAsync(model.Slug);
+
+        if (existingCategory != null && existingCategory.Id != model.Id)
+        {
+            return BadRequest(new
+            {
+                status = 400,
+                isValid = false,
+                errors = new[] { "Slug already exists on another category!" }
+            });
+        }
+        
         var result = await categoriesService.CreateAsync(model);
 
         return Ok(result);
     }
 
     [HttpPut("update")]
-    //[Authorize(Roles = Roles.Admin)]
     public async Task<IActionResult> Update([FromForm] CategoryEditModel model)
     {
-        var result = await categoriesService.UpdateAsync(model);
+        var existingCategory = await categoriesService.GetBySlugAsync(model.Slug);
 
+        if (existingCategory != null && existingCategory.Id != model.Id)
+        {
+            return BadRequest(new
+            {
+                status = 400,
+                isValid = false,
+                errors = new[] { "Slug already exists on another category!" }
+            });
+        }
+
+        var result = await categoriesService.UpdateAsync(model);
         return Ok(result);
     }
 
