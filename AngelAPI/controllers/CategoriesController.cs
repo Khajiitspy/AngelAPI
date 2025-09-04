@@ -23,7 +23,7 @@ public class CategoriesController(ICategoriesService categoriesService) : Contro
     {
         var existingCategory = await categoriesService.GetBySlugAsync(model.Slug);
 
-        if (existingCategory != null && existingCategory.Id != model.Id)
+        if (existingCategory != null)
         {
             return BadRequest(new
             {
