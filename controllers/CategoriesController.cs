@@ -3,7 +3,7 @@ using Core.Models.Category;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebATBApi.Controllers;
+namespace AngelAPI.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]

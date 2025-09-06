@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace WebATBApi.Filters;
+namespace AngelAPI.Filters;
 
 public class ValidationFilter : IAsyncActionFilter
 {
